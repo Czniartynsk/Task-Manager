@@ -1,0 +1,7 @@
+Rodar comando: npx prisma db seed
+# Seed Script
+Este script cria um usuário administrador inicial no banco de dados, caso ele ainda não exista. Ele utiliza o Prisma ORM para interagir com o banco de dados e o bcrypt para hashear a senha do administrador.
+# Instruções
+1. Certifique-se de ter o Prisma e o bcrypt instalados no seu projeto.
+2. Configure as variáveis de ambiente `ADMIN_USERNAME` e `ADMIN_PASSWORD` com o nome de usuário e a senha desejados para o administrador.
+3. Execute o script de seed usando o comando `npx prisma db seed`.
