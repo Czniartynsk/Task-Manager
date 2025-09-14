@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
   },
   "prisma": {
     "seed": "tsx prisma/createdInitialAdmin.ts"
